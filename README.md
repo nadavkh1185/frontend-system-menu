@@ -108,6 +108,25 @@ npm run lint
 
 ---
 
+## Run with Docker
+
+Build image
+
+```bash
+docker build -t stk-menu-frontend .
+```
+
+Run container
+
+```bash
+docker run --env-file .env -p 3000:3000 stk-menu-frontend
+```
+
+Application
+
+```
+http://localhost:3000
+
 ## Application Overview
 
 The frontend communicates with the backend REST API to manage hierarchical menus.
@@ -173,3 +192,4 @@ The sidebar remains fixed while the main content area becomes scrollable, provid
 This project depends on the STK Menu Management Backend API.
 
 Please ensure the backend server is running before starting the frontend application.
+```
